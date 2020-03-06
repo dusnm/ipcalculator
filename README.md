@@ -2,7 +2,7 @@
 
 ## About
 
-### A small program to calculate various parameters given the IP address and subnet mask.
+### A small program to calculate various parameters given the IPv4 address and subnet mask.
 
 ## Installation
 
