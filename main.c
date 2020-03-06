@@ -7,14 +7,19 @@ static void output_error(int status)
     switch (status)
     {
     case ERROR_IPV4_DATA_OVERFLOW:
+        fprintf(stderr, "Incorrect IP address segment. Range: 0-255\n");
         break;
     case ERROR_IPV4_INVALID_SYMBOL:
+        fprintf(stderr, "Invalid symbol. Format is: ddd.ddd.ddd.ddd\n");
         break;
     case ERROR_IPV4_MASK_OVERFLOW:
+        fprintf(stderr, "Incorrect subnet mask segment. Range is: 0-255\n");
         break;
     case ERROR_IPV4_NO_MASK:
+        fprintf(stderr, "No subnet mask provided.\n");
         break;
-    case ERROR_IPV4_NOT_ENAUGH_MEMORY:
+    case ERROR_IPV4_NOT_ENOUGH_MEMORY:
+        fprintf(stderr, "Not enough memory to proceed.\n");
         break;
     default:
         fprintf(stderr, "Unknown eror has occurred\n");

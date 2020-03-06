@@ -100,7 +100,7 @@ int convert_to_dot_decimal(ip_t *ip, char *buffer, int size) {
     int result;
 
     if (size < IP_MAX_STRING_SIZE) {
-        return ERROR_IPV4_NOT_ENAUGH_MEMORY;
+        return ERROR_IPV4_NOT_ENOUGH_MEMORY;
     }
 
 # if __BYTE_ORDER == __LITTLE_ENDIAN
@@ -110,7 +110,7 @@ int convert_to_dot_decimal(ip_t *ip, char *buffer, int size) {
 #endif
 
     if (result < 0 || result >= size) {
-        return ERROR_IPV4_NOT_ENAUGH_MEMORY;
+        return ERROR_IPV4_NOT_ENOUGH_MEMORY;
     }
 
     return IPV4_SUCCESS;
