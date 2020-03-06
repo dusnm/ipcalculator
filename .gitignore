@@ -3,3 +3,5 @@
 ipcalc
 build/
 
+*.o
+main
