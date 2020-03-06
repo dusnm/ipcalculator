@@ -25,7 +25,7 @@ sudo make install
 
 ## Uninstallation
 ```
-make uninstall
+sudo make uninstall
 ```
 
 ## Building for Android (Android NDK)
