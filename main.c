@@ -13,7 +13,7 @@ static void output_error(int status)
         fprintf(stderr, "Invalid symbol. Format is: ddd.ddd.ddd.ddd\n");
         break;
     case ERROR_IPV4_MASK_OVERFLOW:
-        fprintf(stderr, "Incorrect subnet mask segment. Range is: 0-255\n");
+        fprintf(stderr, "Incorrect subnet mask segment. Range is: 0-32\n");
         break;
     case ERROR_IPV4_NO_MASK:
         fprintf(stderr, "No subnet mask provided.\n");
