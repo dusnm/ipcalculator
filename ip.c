@@ -59,7 +59,7 @@ int parse_ip(ip_t *ip, char *ip_str) {
         }
 # if __BYTE_ORDER == __LITTLE_ENDIAN
         ip->bytes[3 - i] = u;
-#elif # if __BYTE_ORDER == __BIG_ENDIAN
+#elif __BYTE_ORDER == __BIG_ENDIAN
         ip->bytes[i] = u;
 #endif
     }
@@ -105,7 +105,7 @@ int convert_to_dot_decimal(ip_t *ip, char *buffer, int size) {
 
 # if __BYTE_ORDER == __LITTLE_ENDIAN
     result = snprintf(buffer, size, "%u.%u.%u.%u", ip->bytes[3], ip->bytes[2], ip->bytes[1], ip->bytes[0]);
-#elif # if __BYTE_ORDER == __BIG_ENDIAN
+#elif __BYTE_ORDER == __BIG_ENDIAN
     result = snprintf(buffer, size, "%u.%u.%u.%u", ip->bytes[0], ip->bytes[1], ip->bytes[2], ip->bytes[3]);
 #endif
 
