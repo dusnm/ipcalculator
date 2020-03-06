@@ -12,6 +12,10 @@ ip.o: ip.c ip.h
 
 clean:
 	rm *.o ipcalc
+	rm -rf libs/ obj/
 
 install: ipcalc
 	cp ipcalc $(DESTDIR)$(PREFIX)/bin
+
+uninstall: ipcalc
+	rm $(DESTDIR)$(PREFIX)/bin/ipcalc

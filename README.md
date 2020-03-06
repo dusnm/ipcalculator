@@ -23,6 +23,12 @@ make
 sudo make install
 ```
 
+## Building for Android (Android NDK)
+```
+ndk-build NDK_APPLICATION_MK=`pwd`/Application.mk
+```
+### The binary is in the obj directory.
+
 ## Example usage
 
 ```
