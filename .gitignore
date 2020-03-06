@@ -1,0 +1,7 @@
+.idea/
+.vscode/
+ipcalc
+build/
+
+*.o
+main

@@ -6,6 +6,18 @@
 
 ## Installation
 
+
+1. Using CMAKE
+
+```
+mkdir build && cd build
+cmake ..
+make 
+sudo make install
+```
+
+2. Using Makefile
+
 ```
 make
 sudo make install

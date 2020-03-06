@@ -1,5 +1,5 @@
-output: main.o cidr.o dotdecimal.o
-	gcc main.o cidr.o dotdecimal.o -o ipcalc
+output: main.o cidr.o ip.o
+	gcc main.o cidr.o ip.o -o ipcalc -O3
 
 main.o: main.c
 	gcc -c main.c
@@ -7,8 +7,8 @@ main.o: main.c
 cidr.o: cidr.c cidr.h
 	gcc -c cidr.c
 
-dotdecimal.o: dotdecimal.c dotdecimal.h
-	gcc -c dotdecimal.c
+ip.o: ip.c ip.h
+	gcc -c ip.c
 
 clean:
 	rm *.o ipcalc
