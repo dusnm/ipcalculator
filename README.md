@@ -23,6 +23,11 @@ make
 sudo make install
 ```
 
+## Uninstallation
+```
+make uninstall
+```
+
 ## Building for Android (Android NDK)
 ```
 ndk-build NDK_APPLICATION_MK=`pwd`/Application.mk
