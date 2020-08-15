@@ -1,5 +1,5 @@
 output: main.o cidr.o ip.o
-	gcc main.o cidr.o ip.o -o ipcalc -O3
+	gcc main.o cidr.o ip.o -o ipcalculator -O3
 
 main.o: main.c
 	gcc -c main.c
@@ -11,11 +11,11 @@ ip.o: ip.c ip.h
 	gcc -c ip.c
 
 clean:
-	rm *.o ipcalc
+	rm *.o ipcalculator
 	rm -rf libs/ obj/
 
-install: ipcalc
-	cp ipcalc $(DESTDIR)$(PREFIX)/bin
+install: ipcalculator
+	cp ipcalculator $(DESTDIR)$(PREFIX)/bin
 
-uninstall: ipcalc
-	rm $(DESTDIR)$(PREFIX)/bin/ipcalc
+uninstall: ipcalculator
+	rm $(DESTDIR)$(PREFIX)/bin/ipcalculator
