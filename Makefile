@@ -15,7 +15,7 @@ clean:
 	rm -rf libs/ obj/
 
 install: ipcalculator
-	cp ipcalculator $(DESTDIR)$(PREFIX)/bin
+	cp ipcalculator $(DESTDIR)$(PREFIX)/bin/ipcalculator
 
 uninstall: ipcalculator
 	rm $(DESTDIR)$(PREFIX)/bin/ipcalculator
