@@ -6,6 +6,13 @@
 
 ## Installation
 
+Arch Linux users can get the softwafre from the AUR:
+
+* Example with yay
+```
+yay -S ipcalculator
+```
+
 
 1. Using CMAKE
 
@@ -37,7 +44,7 @@ ndk-build NDK_APPLICATION_MK=`pwd`/Application.mk
 ## Example usage
 
 ```
-ipcalc 192.168.1.1/24
+ipcalculator 192.168.1.1/24
 ```
 
 ## Example output
