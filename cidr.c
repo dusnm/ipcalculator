@@ -17,7 +17,7 @@ void cidr_init(cidr_t* cidr)
     int size = sizeof(cidr_t) / sizeof(ip_t);
 
     for(int i = 0; i < size; i++) {
-        ip_t* ip = (ip_t *) &cidr[i];
+        ip_t* ip = &((ip_t *) cidr)[i]; 
 
         *ip = ip_init();
     }
